@@ -1,6 +1,6 @@
 package course.spring.cargolink.entity.user;
 
-public enum UserRoles {
+public enum UserRole {
     CUSTOMER,
     WAREHOUSE_MANAGER,
     ADMINISTRATOR
