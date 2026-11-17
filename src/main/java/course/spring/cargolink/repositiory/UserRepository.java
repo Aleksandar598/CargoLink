@@ -1,4 +1,4 @@
-package course.spring.cargolink.repositiory.user;
+package course.spring.cargolink.repositiory;
 
 import course.spring.cargolink.entity.user.User;
 import org.springframework.data.jpa.repository.JpaRepository;

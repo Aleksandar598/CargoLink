@@ -1,10 +1,9 @@
-package course.spring.cargolink.service.user;
+package course.spring.cargolink.service;
 
-import course.spring.cargolink.entity.user.User;
 import course.spring.cargolink.exception.EmailAlreadyInUseException;
-import course.spring.dto.UserCredentialsDTO;
-import course.spring.dto.UserDataDTO;
-import course.spring.dto.UserRegistrationDTO;
+import course.spring.cargolink.dto.user.UserCredentialsDTO;
+import course.spring.cargolink.dto.user.UserDataDTO;
+import course.spring.cargolink.dto.user.UserRegistrationDTO;
 
 import java.util.Optional;
 

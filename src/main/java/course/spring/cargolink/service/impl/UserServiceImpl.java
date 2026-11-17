@@ -1,14 +1,14 @@
-package course.spring.cargolink.service.user.impl;
+package course.spring.cargolink.service.impl;
 
 import course.spring.cargolink.entity.user.User;
 import course.spring.cargolink.exception.EmailAlreadyInUseException;
 import course.spring.cargolink.exception.UserNotFoundException;
-import course.spring.cargolink.repositiory.user.UserRepository;
-import course.spring.cargolink.service.user.UserService;
+import course.spring.cargolink.repositiory.UserRepository;
+import course.spring.cargolink.service.UserService;
 import course.spring.cargolink.service.mapper.UserDTOMapper;
-import course.spring.dto.UserCredentialsDTO;
-import course.spring.dto.UserDataDTO;
-import course.spring.dto.UserRegistrationDTO;
+import course.spring.cargolink.dto.user.UserCredentialsDTO;
+import course.spring.cargolink.dto.user.UserDataDTO;
+import course.spring.cargolink.dto.user.UserRegistrationDTO;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;

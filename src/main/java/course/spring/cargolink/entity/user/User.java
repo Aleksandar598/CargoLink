@@ -39,7 +39,6 @@ public class User {
     @Column(nullable = false)
     @NonNull
     private String name;
-    @NotBlank
     @Column(nullable = false)
     @NonNull
     private UserRole role;

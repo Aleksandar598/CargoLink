@@ -1,4 +1,4 @@
-package course.spring.dto;
+package course.spring.cargolink.dto.user;
 
 import course.spring.cargolink.entity.user.UserRole;
 
