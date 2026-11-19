@@ -37,6 +37,7 @@ public class UserControllerImpl implements UserController {
     }
 
     @PostMapping("/login")
+    @Override
     public ResponseEntity<UserDataDTO> login(@Valid @RequestBody UserCredentialsDTO userCredentialsDTO) {
         if (!userService.validateUserCredentials(userCredentialsDTO)) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();

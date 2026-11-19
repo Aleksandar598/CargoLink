@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in | CargoLink</title>
+</head>
+<body>
+<main>
+    <h1>Log in</h1>
+
+    <p th:if="${loginError}" th:text="${loginError}"></p>
+
+    <form th:action="@{/login}" th:object="${credentials}" method="post">
+
+        <label for="email">Email</label>
+        <input id="email"
+               type="email"
+               th:field="*{email}"
+               required>
+
+        <p th:if="${#fields.hasErrors('email')}"
+           th:errors="*{email}"></p>
+
+        <label for="password">Password</label>
+        <input id="password"
+               type="password"
+               th:field="*{password}"
+               required>
+
+        <p th:if="${#fields.hasErrors('password')}"
+           th:errors="*{password}"></p>
+
+        <button type="submit">Log in</button>
+    </form>
+
+    <p>
+        No account yet?
+        <a th:href="@{/register}">Create one</a>
+    </p>
+</main>
+</body>
+</html>
